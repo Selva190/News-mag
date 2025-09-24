@@ -5,7 +5,7 @@ import React from 'react';
 const NewsItem = ({title, description, src, url}) => {
   // Ensure title and description are strings before slicing
   const displayTitle = title ? title.slice(0,50) : "No Title Available";
-  const displayDescription = description ? description.slice(0,90) : "News is a current event. It is information about something that has just happened.";
+  const displayDescription = description ? description.slice(0,90) : "Description not available for this article. Click 'Read more' to view the full content.";
 
   return (
    <div className="card bg-dark text-light mb-3 d-inline-block my-3 mx-3 px-2 py-2" style={{maxWidth: "340px"}}>
